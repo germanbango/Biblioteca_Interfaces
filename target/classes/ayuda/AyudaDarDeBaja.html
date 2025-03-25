@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Descripción de la Ventana - Dar de Baja Usuario</title>
+</head>
+<body>
+
+<h1>Descripción de la Ventana: Dar de Baja Usuario</h1>
+
+<p>La ventana "Dar de Baja Usuario" permite a los administradores eliminar usuarios del sistema, asegurándose de que se gestionen correctamente los préstamos activos de los usuarios antes de su eliminación.</p>
+
+<h2>Componentes de la ventana:</h2>
+
+<ul>
+  <li><strong>Tabla de Usuarios:</strong> Muestra todos los usuarios registrados en el sistema. Cada fila de la tabla contiene el correo electrónico y el rol de cada usuario.</li>
+  <li><strong>Nombre:</strong> Muestra el nombre del usuario seleccionado de la tabla.</li>
+  <li><strong>Apellido:</strong> Muestra el apellido del usuario seleccionado de la tabla.</li>
+  <li><strong>Correo Electrónico:</strong> Muestra el correo electrónico del usuario seleccionado de la tabla.</li>
+  <li><strong>Rol:</strong> Muestra el rol del usuario seleccionado (por ejemplo, "Administrador", "Usuario", etc.).</li>
+  <li><strong>Botón Cerrar:</strong> Permite cerrar la ventana con una confirmación previa.</li>
+</ul>
+
+<h2>Funcionalidad de la Ventana:</h2>
+
+<p>Al seleccionar un usuario de la tabla, los detalles del usuario (nombre, apellido, correo y rol) se muestran en los campos correspondientes en la parte superior de la ventana.</p>
+
+<h3>Eliminar un usuario:</h3>
+<p>Cuando el administrador decide dar de baja a un usuario, el proceso ocurre de la siguiente manera:</p>
+<ol>
+  <li>El administrador selecciona un usuario de la tabla.</li>
+  <li>El sistema carga los detalles del usuario seleccionado.</li>
+  <li>El administrador hace clic en el botón "Dar de Baja".</li>
+  <li>El sistema verifica si el usuario tiene préstamos activos.</li>
+  <li>Si el usuario tiene préstamos, el estado de los ejemplares prestados se marca como no disponible (false).</li>
+  <li>El sistema elimina los préstamos asociados con el usuario.</li>
+  <li>El usuario es eliminado del sistema.</li>
+  <li>Se muestra un mensaje de confirmación "Usuario dado de baja".</li>
+  <li>La tabla se actualiza y se borra la información del usuario dado de baja de la vista.</li>
+</ol>
+
+<h3>Confirmación al Cerrar la Ventana:</h3>
+<p>Antes de cerrar la ventana, el sistema pide confirmación al administrador para asegurarse de que realmente desea cerrarla. Si se confirma, la ventana se cierra.</p>
+
+<h2>Mensajes de la ventana:</h2>
+
+<ul>
+  <li><strong>Usuario Dado de Baja:</strong> Si el proceso de eliminación es exitoso, el sistema muestra un mensaje que indica que el usuario ha sido dado de baja correctamente.</li>
+  <li><strong>Confirmación de Cierre:</strong> Si el administrador intenta cerrar la ventana, el sistema solicita confirmación antes de proceder.</li>
+</ul>
+
+<h2>Flujo de trabajo:</h2>
+<ol>
+  <li>El administrador selecciona un usuario de la lista.</li>
+  <li>El sistema carga los detalles del usuario seleccionado.</li>
+  <li>El administrador hace clic en "Dar de Baja" para eliminar al usuario.</li>
+  <li>El sistema verifica los préstamos y modifica el estado de los ejemplares prestados.</li>
+  <li>Se elimina el usuario y se muestra un mensaje de éxito.</li>
+  <li>El administrador puede cerrar la ventana, con confirmación previa.</li>
+</ol>
+
+<p>Esta ventana es útil para gestionar la baja de usuarios y asegurarse de que todos los recursos prestados sean correctamente gestionados antes de la eliminación del usuario del sistema.</p>
+
+</body>
+</html>
