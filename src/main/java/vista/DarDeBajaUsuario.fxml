@@ -28,7 +28,7 @@
             <Insets left="15.0" />
          </HBox.margin>
       </ImageView>
-      <VBox fx:id="imgAyuda" alignment="TOP_RIGHT" prefHeight="66.0" prefWidth="64.0">
+      <VBox  alignment="TOP_RIGHT" prefHeight="66.0" prefWidth="64.0">
          <children>
             <ImageView fitHeight="88.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                <image>
